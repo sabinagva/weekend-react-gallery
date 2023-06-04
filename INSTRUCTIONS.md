@@ -35,7 +35,7 @@ To practice passing values through `props` in React, you will build the gallery 
 
 > NOTE: Images don't need to be 100px x 100px but it will be easier if the are all the same dimensions.
 
-![mockup one](wireframes/first-mockup.png)
+![mockup one](wireframes/firs t-mockup.png)
 
 ![mockup two](wireframes/second-mockup.png)
 
