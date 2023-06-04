@@ -18,21 +18,21 @@ function App() {
     }).catch((error) => {
       console.log('error in get function', error)
     })
-  
+  }
   //document on ready
   useEffect(() => {
     getGallery();
   }, [])
 
 
-  }
+  
+  console.log('gallery is ', gallery)
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
+        
         <GalleryList gallery = {gallery} getGallery={getGallery}/>
         
         
