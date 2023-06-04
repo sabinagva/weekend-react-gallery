@@ -5,7 +5,7 @@ function GalleryList (props) {
  console.log('props gallery is', props.gallery)
     return (
        
-     <div className="img">
+     <div>
      {props.gallery.map(image =>
         <GalleryItem 
         key={image.id}
