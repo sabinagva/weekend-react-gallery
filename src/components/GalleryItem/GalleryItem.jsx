@@ -23,12 +23,12 @@ function GalleryItem(props) {
     <>
     
     <div>
-        <div onClick={() => setClicked(true)}>
-            {clicked ? (<p>{props.description}</p>) : (<img src={props.path}></img>)}
+        <div onClick={() => setClicked(!clicked)}>
+            {clicked ? (<p>{props.description}</p>) : (<img src={props.path} className= "picture"></img>)}
         </div>
         <button onClick={updateLike}>❤️</button>
-        <p>{props.likes} Liked This</p>
-    <img className = "pic" src={props.path}></img>
+        <p>{props.likes} People Liked This</p>
+    
     
     </div>
     
