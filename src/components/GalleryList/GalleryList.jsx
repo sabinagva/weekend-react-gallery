@@ -16,6 +16,7 @@ function GalleryList (props) {
         />
         
      )} 
+     <p>hello</p>
      
      </div>
        
