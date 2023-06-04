@@ -1,18 +1,25 @@
-
+import GalleryItem from "../GalleryItem/GalleryItem"
 function GalleryList (props) {
 
     return (
-        <>
-        <ul>
-            {gallery.map(image =>(
-                <li key={image.id}>
-
-
-                </li>
-
-            )
-            }
-        </ul>
-        </>
+       
+     <div>
+     {props.gallery.map(image =>
+        <GalleryItem 
+        key={image.id}
+        image = {image}
+        path = {image.path}
+        description = {image.description}
+        likes=  {image.likes}
+        getGallery = {props.getGallery}
+        
+        />
+        
+     )} 
+     
+     </div>
+       
     )
+    
 }
+export default GalleryList

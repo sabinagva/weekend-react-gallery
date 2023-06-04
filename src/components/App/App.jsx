@@ -6,12 +6,9 @@ import GalleryList from '../GalleryList/GalleryList'
 function App() {
   const [gallery, setGallery] = useState([])
  
-  //document on ready
-  useEffect(() => {
-    getGallery();
-  }, [])
 
   //GET
+
   const getGallery = () => {
     console.log('in get function')
     axios.get('/gallery')
@@ -21,11 +18,11 @@ function App() {
     }).catch((error) => {
       console.log('error in get function', error)
     })
-  //PUT 
-  const updateLike = () => {
-    console.log('in put function')
-    axios.put(/gallery/id)
-  }
+  
+  //document on ready
+  useEffect(() => {
+    getGallery();
+  }, [])
 
 
   }
@@ -36,7 +33,9 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         <img src="images/goat_small.jpg"/>
-        <GalleryList galleryList = {gallery}/>
+        <GalleryList gallery = {gallery} getGallery={getGallery}/>
+        
+        
       </div>
     );
 }
