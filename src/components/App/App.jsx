@@ -15,6 +15,8 @@ function App() {
     .then((response) => {
       setGallery(response.data)
       console.log('response data is', response.data)
+      console.log('response is', response)
+      
     }).catch((error) => {
       console.log('error in get function', error)
     })

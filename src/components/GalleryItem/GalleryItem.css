@@ -1,5 +1,14 @@
-.picture{
-    width:300px;
-    height:200px;
-    
-}
+.picture {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+  }
+  
+  .picture:hover {
+    transform: scale(1.2); /* Increase the scale on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow on hover */
+  }
+
+ 

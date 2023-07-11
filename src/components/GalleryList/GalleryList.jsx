@@ -6,6 +6,7 @@ function GalleryList (props) {
     return (
        
      <div>
+        
      {props.gallery.map(image =>
         <GalleryItem 
         key={image.id}
